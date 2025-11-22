@@ -88,12 +88,12 @@
    TÍTULO — DESKTOP
 ========================== */
 .titulo-cardapio {
-    margin-top: 60px;
-    margin-left: 10px;
+    margin-top: 70px;
+    margin-left: 20px;
     text-align: left;
     font-size: 32px;
-    padding-left: 20px;  /* deixa alinhamento bonito sem colar na borda */
 }
+
 
 /* =======================
    RESPONSIVO — CELULAR
