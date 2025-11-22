@@ -89,7 +89,7 @@
 ========================== */
 .titulo-cardapio {
     margin-top: 60px;
-    margin-left: 0;
+    margin-left: 10px;
     text-align: left;
     font-size: 32px;
     padding-left: 20px;  /* deixa alinhamento bonito sem colar na borda */
