@@ -1,28 +1,35 @@
+/* =======================
+   HEADER
+========================== */
 .header-area {
     position: relative;
     width: 100%;
-    height: 140px;
-    overflow: visible; /* <- AGORA A LOGO PODE SAIR DO HEADER */
+    height: 200px; /* tamanho ideal desktop */
+    overflow: visible;
 }
 
 .header-banner {
     width: 100%;
-    height: 144%;
-    object-fit: cover; /* garante que ele preencha sem deformar */
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 .header-logo {
     position: absolute;
-    bottom: -100px;
+    bottom: -60px;
     right: 25px;
-    width: 105px;
-    height: 105px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 50%;
     border: 4px solid white;
     box-shadow: 0px 2px 8px rgba(0,0,0,0.3);
 }
 
+/* =======================
+   MENU SCROLL
+========================== */
 .menu-scroll {
     display: flex;
     overflow-x: auto;
@@ -49,6 +56,9 @@
     font-size: 15px;
 }
 
+/* =======================
+   CARDÁPIO
+========================== */
 .item-img {
     width: 110px;
     height: 80px;
@@ -59,7 +69,6 @@
 .accordion-button {
     font-size: 18px;
     padding: 10px;
-
 }
 
 .accordion-item {
@@ -75,27 +84,31 @@
     padding-right: 8px;
 }
 
+/* =======================
+   TÍTULO — DESKTOP
+========================== */
 .titulo-cardapio {
-    margin-left: -113px;
-    margin-top: 70px;
+    margin-top: 60px;
+    margin-left: 0;
+    text-align: left;
+    font-size: 32px;
+    padding-left: -50px;  /* deixa alinhamento bonito sem colar na borda */
 }
 
-/* ====== TELA DE CELULAR ====== */
-/* ====== TELA DE CELULAR ====== */
+/* =======================
+   RESPONSIVO — CELULAR
+========================== */
 @media (max-width: 768px) {
 
-    /* Banner */
     .header-area {
-        height: 140px; 
+        height: 150px;
     }
 
     .header-banner {
-        height: 140px;
+        height: 100%;
         object-fit: cover;
-        object-position: center;
     }
 
-    /* Logo */
     .header-logo {
         width: 80px;
         height: 80px;
@@ -104,20 +117,12 @@
         border-width: 3px;
     }
 
-    /* TÍTULO AJUSTADO */
     .titulo-cardapio {
-        margin-top: 55px !important;
-        margin-left: 0 !important;
+        margin-top: 55px !important; /* desce abaixo da logo */
+        margin-left: 10px !important;
         font-size: 26px;
-        text-align: left;
     }
 
-    /* Menu superior */
-    .menu-scroll {
-        margin-top: 10px;
-    }
-
-    /* Espaçamento geral */
     .cardapio-wrapper {
         padding-left: 10px;
         padding-right: 10px;
